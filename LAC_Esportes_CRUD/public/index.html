@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+
+
+<head>
+
+
+
+  <meta charset="UTF-8">
+
+
+
+  <meta
+
+    name="viewport"
+
+    content="width=device-width, initial-scale=1.0">
+
+
+
+  <title>LAC Esportes | Futebol</title>
+
+
+
+  <link
+
+    rel="stylesheet"
+
+    href="style.css">
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+  <!-- =====================================
+
+       CABEÇALHO
+
+  ====================================== -->
+
+
+
+  <header class="topo">
+
+
+
+    <a
+
+      href="#"
+
+      class="logo"
+
+      onclick="abrirAba('inicio')">
+
+
+
+      <span class="logo-lac">
+
+        LAC
+
+      </span>
+
+
+
+      <span class="logo-esportes">
+
+        FUTEBOL
+
+      </span>
+
+
+
+    </a>
+
+
+
+
+
+    <nav class="menu">
+
+
+
+      <button
+
+        class="menu-btn ativo"
+
+        data-aba="inicio"
+
+        onclick="abrirAba('inicio')">
+
+
+
+        Início
+
+
+
+      </button>
+
+
+
+
+
+      <button
+
+        class="menu-btn"
+
+        data-aba="clientes"
+
+        onclick="abrirAba('clientes')">
+
+
+
+        Clientes
+
+
+
+      </button>
+
+
+
+
+
+      <button
+
+        class="menu-btn"
+
+        data-aba="produtos"
+
+        onclick="abrirAba('produtos')">
+
+
+
+        Produtos
+
+
+
+      </button>
+
+
+
+
+
+      <button
+
+        class="menu-btn"
+
+        data-aba="vendas"
+
+        onclick="abrirAba('vendas')">
+
+
+
+        Loja
+
+
+
+      </button>
+
+
+
+
+
+      <button
+
+        class="menu-btn"
+
+        data-aba="carrinho"
+
+        onclick="abrirAba('carrinho')">
+
+
+
+        🛒 Carrinho
+
+
+
+        <span id="contadorMenuCarrinho">
+
+          0
+
+        </span>
+
+
+
+      </button>
+
+
+
+    </nav>
+
+
+
+
+
+    <button
+
+      class="carrinho"
+
+      onclick="abrirAba('carrinho')"
+
+      title="Abrir carrinho">
+
+
+
+      🛒
+
+
+
+      <span id="contadorCarrinho">
+
+        0
+
+      </span>
+
+
+
+    </button>
+
+
+
+  </header>
+
+
+
+
+
+
+
+  <!-- =====================================
+
+       CONTEÚDO
+
+  ====================================== -->
+
+
+
+  <main>
+
+
+
+
+
+    <!-- =====================================
+
+         INÍCIO
+
+    ====================================== -->
+
+
+
+    <section
+
+      id="inicio"
+
+      class="aba ativa">
+
+
+
+
+
+      <div class="banner">
+
+
+
+        <div class="banner-texto">
+
+
+
+          <span class="tag">
+
+            LAC ESPORTES
+
+          </span>
+
+
+
+
+
+          <h1>
+
+            100% Futebol.
+
+          </h1>
+
+
+
+
+
+          <p>
+
+            Encontre produtos de futebol,
+
+            equipamentos e acessórios para
+
+            jogadores e apaixonados pelo esporte.
+
+          </p>
+
+
+
+
+
+          <div class="botoes-banner">
+
+
+
+            <button
+
+              class="botao-principal"
+
+              onclick="abrirAba('vendas')">
+
+
+
+              Ver produtos
+
+
+
+            </button>
+
+
+
+
+
+            <button
+
+              class="botao-secundario"
+
+              onclick="abrirAba('produtos')">
+
+
+
+              Cadastrar produto
+
+
+
+            </button>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="bola-futebol">
+
+          ⚽
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="cards">
+
+
+
+
+
+        <div class="card">
+
+
+
+          <div class="card-icone verde">
+
+            ⚽
+
+          </div>
+
+
+
+          <div>
+
+
+
+            <span>
+
+              Especialidade
+
+            </span>
+
+
+
+            <strong>
+
+              Futebol
+
+            </strong>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="card">
+
+
+
+          <div class="card-icone preto">
+
+            🛍️
+
+          </div>
+
+
+
+          <div>
+
+
+
+            <span>
+
+              Produtos
+
+            </span>
+
+
+
+            <strong>
+
+              Para jogadores
+
+            </strong>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="card">
+
+
+
+          <div class="card-icone verde">
+
+            ✓
+
+          </div>
+
+
+
+          <div>
+
+
+
+            <span>
+
+              Atendimento
+
+            </span>
+
+
+
+            <strong>
+
+              LAC Esportes
+
+            </strong>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="inicio-conteudo">
+
+
+
+
+
+        <div class="painel">
+
+
+
+          <h2>
+
+            Sobre a LAC Esportes
+
+          </h2>
+
+
+
+          <p>
+
+            A LAC Esportes é uma loja especializada
+
+            em futebol, criada para oferecer produtos
+
+            para jogadores e apaixonados pelo esporte.
+
+          </p>
+
+
+
+          <p>
+
+            Nossa vitrine reúne produtos cadastrados
+
+            pela administração da loja, com informações
+
+            de preço, estoque, categoria e descrição.
+
+          </p>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="painel">
+
+
+
+          <h3>
+
+            🏆 Nosso foco
+
+          </h3>
+
+
+
+          <div class="destaque">
+
+
+
+            <div class="icone-destaque">
+
+              ⚽
+
+            </div>
+
+
+
+            <p>
+
+              Produtos exclusivamente relacionados
+
+              ao futebol.
+
+            </p>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- =====================================
+
+         CLIENTES
+
+    ====================================== -->
+
+
+
+    <section
+
+      id="clientes"
+
+      class="aba">
+
+
+
+
+
+      <div class="titulo-pagina">
+
+
+
+        <span class="tag">
+
+          LAC ESPORTES
+
+        </span>
+
+
+
+        <h1>
+
+          Cadastro de clientes
+
+        </h1>
+
+
+
+        <p>
+
+          Cadastre os clientes da loja.
+
+        </p>
+
+
+
+      </div>
+
+
+
+
+
+      <form id="formCliente">
+
+
+
+        <fieldset>
+
+
+
+          <legend>
+
+            Novo cliente
+
+          </legend>
+
+
+
+
+
+          <div class="linha">
+
+
+
+            <label class="campo-grande">
+
+
+
+              <span>
+
+                Nome completo *
+
+              </span>
+
+
+
+              <input
+
+                name="nome"
+
+                required>
+
+
+
+            </label>
+
+
+
+
+
+            <label>
+
+
+
+              <span>
+
+                CPF
+
+              </span>
+
+
+
+              <input
+
+                name="cpf"
+
+                placeholder="000.000.000-00">
+
+
+
+            </label>
+
+
+
+          </div>
+
+
+
+
+
+          <div class="linha">
+
+
+
+            <label>
+
+
+
+              <span>
+
+                Telefone
+
+              </span>
+
+
+
+              <input
+
+                name="telefone"
+
+                placeholder="(00) 00000-0000">
+
+
+
+            </label>
+
+
+
+
+
+            <label>
+
+
+
+              <span>
+
+                E-mail
+
+              </span>
+
+
+
+              <input
+
+                name="email"
+
+                type="email">
+
+
+
+            </label>
+
+
+
+          </div>
+
+
+
+
+
+          <h3>
+
+            Endereço
+
+          </h3>
+
+
+
+
+
+          <div class="linha">
+
+
+
+            <label>
+
+
+
+              <span>
+
+                CEP
+
+              </span>
+
+
+
+              <input
+
+                name="cep"
+
+                placeholder="85860-000">
+
+
+
+            </label>
+
+
+
+
+
+            <label class="campo-grande">
+
+
+
+              <span>
+
+                Logradouro
+
+              </span>
+
+
+
+              <input
+
+                name="logradouro">
+
+
+
+            </label>
+
+
+
+
+
+            <label class="campo-numero">
+
+
+
+              <span>
+
+                Número
+
+              </span>
+
+
+
+              <input
+
+                name="numero">
+
+
+
+            </label>
+
+
+
+          </div>
+
+
+
+
+
+          <div class="linha">
+
+
+
+            <label>
+
+
+
+              <span>
+
+                Bairro
+
+              </span>
+
+
+
+              <input
+
+                name="bairro">
+
+
+
+            </label>
+
+
+
+
+
+            <label class="campo-grande">
+
+
+
+              <span>
+
+                Cidade
+
+              </span>
+
+
+
+              <input
+
+                name="cidade">
+
+
+
+            </label>
+
+
+
+
+
+            <label class="campo-uf">
+
+
+
+              <span>
+
+                UF
+
+              </span>
+
+
+
+              <input
+
+                name="uf"
+
+                maxlength="2">
+
+
+
+            </label>
+
+
+
+          </div>
+
+
+
+
+
+          <button
+
+            type="submit"
+
+            class="botao-principal">
+
+
+
+            Salvar cliente
+
+
+
+          </button>
+
+
+
+
+
+          <p id="avisoCliente"></p>
+
+
+
+        </fieldset>
+
+
+
+      </form>
+
+
+
+
+
+      <h2 class="titulo-tabela">
+
+        Clientes cadastrados
+
+      </h2>
+
+
+
+
+
+      <div class="tabela-container">
+
+
+
+        <table>
+
+
+
+          <thead>
+
+
+
+            <tr>
+
+
+
+              <th>ID</th>
+
+              <th>Nome</th>
+
+              <th>Telefone</th>
+
+              <th>E-mail</th>
+
+              <th>Cidade</th>
+
+              <th></th>
+
+
+
+            </tr>
+
+
+
+          </thead>
+
+
+
+
+
+          <tbody id="corpoTabelaClientes">
+
+          </tbody>
+
+
+
+        </table>
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- =====================================
+
+         PRODUTOS
+
+    ====================================== -->
+
+
+
+    <section
+
+      id="produtos"
+
+      class="aba">
+
+
+
+
+
+      <div class="titulo-pagina">
+
+
+
+        <span class="tag">
+
+          ADMINISTRAÇÃO
+
+        </span>
+
+
+
+        <h1>
+
+          Cadastro de produtos
+
+        </h1>
+
+
+
+        <p>
+
+          Adicione produtos de futebol à loja.
+
+        </p>
+
+
+
+      </div>
+
+
+
+
+
+      <form id="formProduto">
+
+
+
+        <fieldset>
+
+
+
+          <legend>
+
+            Novo produto
+
+          </legend>
+
+
+
+
+
+          <div class="linha">
+
+
+
+            <label class="campo-grande">
+
+
+
+              <span>
+
+                Nome do produto *
+
+              </span>
+
+
+
+              <input
+
+                name="nome"
+
+                placeholder="Ex: Camisa de Futebol"
+
+                required>
+
+
+
+            </label>
+
+
+
+
+
+            <label>
+
+
+
+              <span>
+
+                Categoria *
+
+              </span>
+
+
+
+              <select
+
+                name="categoria"
+
+                required>
+
+
+
+                <option value="">
+
+                  Selecione
+
+                </option>
+
+
+
+                <option value="Camisas">
+
+                  Camisas
+
+                </option>
+
+
+
+                <option value="Bolas">
+
+                  Bolas
+
+                </option>
+
+
+
+                <option value="Chuteiras">
+
+                  Chuteiras
+
+                </option>
+
+
+
+                <option value="Calções">
+
+                  Calções
+
+                </option>
+
+
+
+                <option value="Meias">
+
+                  Meias
+
+                </option>
+
+
+
+                <option value="Acessórios">
+
+                  Acessórios
+
+                </option>
+
+
+
+                <option value="Outros">
+
+                  Outros
+
+                </option>
+
+
+
+              </select>
+
+
+
+            </label>
+
+
+
+          </div>
+
+
+
+
+
+          <div class="linha">
+
+
+
+            <label>
+
+
+
+              <span>
+
+                Preço *
+
+              </span>
+
+
+
+              <input
+
+                name="preco"
+
+                type="number"
+
+                step="0.01"
+
+                min="0"
+
+                placeholder="0,00"
+
+                required>
+
+
+
+            </label>
+
+
+
+
+
+            <label>
+
+
+
+              <span>
+
+                Estoque *
+
+              </span>
+
+
+
+              <input
+
+                name="estoque"
+
+                type="number"
+
+                min="0"
+
+                placeholder="0"
+
+                required>
+
+
+
+            </label>
+
+
+
+          </div>
+
+
+
+
+
+          <label>
+
+
+
+            <span>
+
+              Descrição
+
+            </span>
+
+
+
+            <textarea
+
+              name="descricao"
+
+              rows="4"
+
+              placeholder="Descreva o produto..."></textarea>
+
+
+
+          </label>
+
+
+
+
+
+
+
+          <!-- UPLOAD -->
+
+
+
+          <div class="upload-imagem">
+
+
+
+            <span class="label-upload">
+
+              Imagem do produto
+
+            </span>
+
+
+
+
+
+            <label
+
+              class="area-upload"
+
+              for="imagemProduto">
+
+
+
+              <input
+
+                type="file"
+
+                id="imagemProduto"
+
+                name="imagem"
+
+                accept="image/*">
+
+
+
+
+
+              <span class="upload-icone">
+
+                📷
+
+              </span>
+
+
+
+
+
+              <strong>
+
+                Clique para escolher uma imagem
+
+              </strong>
+
+
+
+
+
+              <small>
+
+                JPG, PNG ou WEBP
+
+              </small>
+
+
+
+            </label>
+
+
+
+
+
+            <div
+
+              id="previewImagem"
+
+              class="preview-imagem">
+
+            </div>
+
+
+
+          </div>
+
+
+
+
+
+
+
+          <button
+
+            type="submit"
+
+            class="botao-principal">
+
+
+
+            Cadastrar produto
+
+
+
+          </button>
+
+
+
+
+
+          <p id="avisoProduto"></p>
+
+
+
+        </fieldset>
+
+
+
+      </form>
+
+
+
+
+
+      <h2 class="titulo-tabela">
+
+        Produtos cadastrados
+
+      </h2>
+
+
+
+
+
+      <div class="tabela-container">
+
+
+
+        <table>
+
+
+
+          <thead>
+
+
+
+            <tr>
+
+
+
+              <th>Imagem</th>
+
+              <th>ID</th>
+
+              <th>Produto</th>
+
+              <th>Categoria</th>
+
+              <th>Preço</th>
+
+              <th>Estoque</th>
+
+              <th></th>
+
+
+
+            </tr>
+
+
+
+          </thead>
+
+
+
+
+
+          <tbody id="corpoTabelaProdutos">
+
+          </tbody>
+
+
+
+        </table>
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- =====================================
+
+         LOJA / VENDAS
+
+    ====================================== -->
+
+
+
+    <section
+
+      id="vendas"
+
+      class="aba">
+
+
+
+
+
+      <div class="loja-topo">
+
+
+
+        <div>
+
+
+
+          <span class="tag">
+
+            LAC ESPORTES
+
+          </span>
+
+
+
+          <h1>
+
+            Loja de Futebol
+
+          </h1>
+
+
+
+          <p>
+
+            Encontre produtos para jogar futebol.
+
+          </p>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="carrinho-loja">
+
+
+
+          🛒 Carrinho:
+
+
+
+          <strong id="totalCarrinho">
+
+            0
+
+          </strong>
+
+
+
+          produto(s)
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <!-- FILTRO -->
+
+
+
+      <div class="filtro">
+
+
+
+        <input
+
+          type="search"
+
+          id="buscaProduto"
+
+          placeholder="Buscar produto...">
+
+
+
+
+
+        <select id="filtroCategoria">
+
+
+
+          <option value="todos">
+
+            Todas as categorias
+
+          </option>
+
+
+
+          <option value="Camisas">
+
+            Camisas
+
+          </option>
+
+
+
+          <option value="Bolas">
+
+            Bolas
+
+          </option>
+
+
+
+          <option value="Chuteiras">
+
+            Chuteiras
+
+          </option>
+
+
+
+          <option value="Calções">
+
+            Calções
+
+          </option>
+
+
+
+          <option value="Meias">
+
+            Meias
+
+          </option>
+
+
+
+          <option value="Acessórios">
+
+            Acessórios
+
+          </option>
+
+
+
+          <option value="Outros">
+
+            Outros
+
+          </option>
+
+
+
+        </select>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <!-- VITRINE -->
+
+
+
+      <div
+
+        id="vitrine"
+
+        class="vitrine">
+
+      </div>
+
+
+
+
+
+
+
+      <!-- CARRINHO ANTIGO / RESUMO -->
+
+
+
+      <div
+
+        id="areaCarrinho"
+
+        class="area-carrinho">
+
+
+
+        <div class="carrinho-header">
+
+
+
+          <h2>
+
+            Seu carrinho
+
+          </h2>
+
+
+
+
+
+          <button
+
+            class="fechar"
+
+            onclick="fecharCarrinho()">
+
+
+
+            ×
+
+
+
+          </button>
+
+
+
+        </div>
+
+
+
+
+
+        <div id="itensCarrinho">
+
+        </div>
+
+
+
+
+
+        <div class="total-carrinho">
+
+
+
+          <span>
+
+            Total
+
+          </span>
+
+
+
+          <strong id="valorTotal">
+
+            R$ 0,00
+
+          </strong>
+
+
+
+        </div>
+
+
+
+
+
+        <button
+
+          class="botao-finalizar"
+
+          onclick="abrirAba('carrinho')">
+
+
+
+          Ir para o carrinho
+
+
+
+        </button>
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- =====================================
+
+         CARRINHO
+
+    ====================================== -->
+
+
+
+    <section
+
+      id="carrinho"
+
+      class="aba">
+
+
+
+
+
+      <div class="titulo-pagina">
+
+
+
+        <span class="tag">
+
+          LAC ESPORTES
+
+        </span>
+
+
+
+        <h1>
+
+          Meu Carrinho
+
+        </h1>
+
+
+
+        <p>
+
+          Confira seus produtos antes de finalizar.
+
+        </p>
+
+
+
+      </div>
+
+
+
+
+
+      <div class="pagina-carrinho">
+
+
+
+
+
+        <!-- PRODUTOS -->
+
+
+
+        <div class="lista-carrinho">
+
+
+
+          <h2>
+
+            Produtos selecionados
+
+          </h2>
+
+
+
+
+
+          <div id="itensCarrinhoPagina">
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- RESUMO -->
+
+
+
+        <div class="resumo-compra">
+
+
+
+          <h2>
+
+            Resumo da compra
+
+          </h2>
+
+
+
+
+
+          <div class="resumo-linha">
+
+
+
+            <span>
+
+              Produtos
+
+            </span>
+
+
+
+            <strong id="quantidadeResumo">
+
+              0
+
+            </strong>
+
+
+
+          </div>
+
+
+
+
+
+          <div class="resumo-linha">
+
+
+
+            <span>
+
+              Subtotal
+
+            </span>
+
+
+
+            <strong id="subtotalResumo">
+
+              R$ 0,00
+
+            </strong>
+
+
+
+          </div>
+
+
+
+
+
+          <div class="resumo-linha">
+
+
+
+            <span>
+
+              Frete
+
+            </span>
+
+
+
+            <strong>
+
+              Grátis
+
+            </strong>
+
+
+
+          </div>
+
+
+
+
+
+          <div class="resumo-total">
+
+
+
+            <span>
+
+              Total
+
+            </span>
+
+
+
+            <strong id="totalResumo">
+
+              R$ 0,00
+
+            </strong>
+
+
+
+          </div>
+
+
+
+
+
+          <button
+
+            class="botao-finalizar"
+
+            onclick="finalizarCompra()">
+
+
+
+            Finalizar compra
+
+
+
+          </button>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+
+  </main>
+
+
+
+
+
+
+
+  <!-- =====================================
+
+       RODAPÉ
+
+  ====================================== -->
+
+
+
+  <footer>
+
+
+
+    <div class="logo-footer">
+
+      LAC ESPORTES
+
+    </div>
+
+
+
+    <p>
+
+      Sua loja especializada em futebol.
+
+    </p>
+
+
+
+    <small>
+
+      © 2026 LAC Esportes — Todos os direitos reservados.
+
+    </small>
+
+
+
+  </footer>
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+
+
+</body>
+
+
+
+</html>

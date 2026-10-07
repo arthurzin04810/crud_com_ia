@@ -1,0 +1,12 @@
+{
+  "name": "lac-esportes-crud",
+  "version": "1.0.0",
+  "description": "LAC Esportes - CRUD integrado com SQLite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
